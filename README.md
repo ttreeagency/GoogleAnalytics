@@ -7,13 +7,17 @@ This package contains TypoScript objects to integrate Google Analytics Tracking 
 
 ## How to integrate your tracking code ?
 
-Generate a HTML script element in HTML5:
+By default the tracking code in include only in ```Production``` or ```Production/*``` context:
 
     prototype(TYPO3.Neos:Page)
         body.javascripts.analytics = Ttree.GoogleAnalytics:TrackingCode {
             trackingCode = 'UA-...'
         }
     }
+
+If you need to tracking code check [TrackingCode](Resources/Private/TypoScript/TypoScriptObjects/TrackingCode.ts2), you
+can change the EEL expression at ```@if.includeTrackingCode```.
+
 
 ## Acknowledgments
 
