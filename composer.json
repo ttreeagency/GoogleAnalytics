@@ -1,0 +1,19 @@
+{
+    "name": "ttree/googleanalytics",
+    "type": "typo3-flow-package",
+    "description": "Simple TypoScript objects to integration Google Analytics tracking codes on your Neos CMS Project",
+    "license": "MIT",
+    "keywords": [
+        "neos",
+        "tracking",
+        "analytics"
+    ],
+    "require": {
+        "typo3/typoscript": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ttree\\GoogleAnalytics\\": "Classes"
+        }
+    }
+}
