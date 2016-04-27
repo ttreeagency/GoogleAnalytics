@@ -1,5 +1,7 @@
 prototype(Ttree.GoogleAnalytics:TrackingCode) < prototype(TypoScript:Template) {
     templatePath = 'resource://Ttree.GoogleAnalytics/Private/Templates/TypoScriptObjects/TrackingCode.html'
     trackingCode = ${null}
+    enableLinkId = ${null}
+    trackingLinkId = ${this.enableLinkId ? 'ga(\'require\', \'linkid\');' : ''}
     @if.includeTrackingCode = ${String.startsWith(Configuration.setting('TYPO3.Flow.core.context'), 'Production')}
 }

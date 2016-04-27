@@ -18,6 +18,17 @@ By default the tracking code in include only in ```Production``` or ```Productio
 If you need to tracking code check [TrackingCode](Resources/Private/TypoScript/TypoScriptObjects/TrackingCode.ts2), you
 can change the EEL expression at ```@if.includeTrackingCode```.
 
+### Additional option
+
+You may enable ```linkid``` feature tracking. [Enhanced Link Attribution](https://support.google.com/analytics/answer/2558867)
+
+    prototype(TYPO3.Neos:Page)
+        body.javascripts.analytics = Ttree.GoogleAnalytics:TrackingCode {
+            trackingCode = 'UA-...'
+            enableLinkId = ${true}
+        }
+    }
+
 
 ## Acknowledgments
 
