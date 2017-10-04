@@ -1,0 +1,6 @@
+prototype(Ttree.GoogleAnalytics:TrackingCode) < prototype(Fusion:Template) {
+    templatePath = 'resource://Ttree.GoogleAnalytics/Private/Fusion/TrackingCode/TrackingCode.html'
+    trackingCode = ${null}
+
+    @if.includeTrackingCode = ${String.startsWith(Configuration.setting('Neos.Flow.core.context'), 'Production')}
+}

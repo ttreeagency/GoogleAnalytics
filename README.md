@@ -9,7 +9,7 @@ This package contains a TypoScript object to integrate Google Analytics tracking
 
 Add this to your TypoScript to add the tracking snippet and set your code:
 
-    prototype(TYPO3.Neos:Page)
+    prototype(Neos.Neos:Page)
         body.javascripts.analytics = Ttree.GoogleAnalytics:TrackingCode {
             trackingCode = 'UA-...'
         }
