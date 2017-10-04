@@ -1,13 +1,13 @@
 [![BSD License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Latest Stable Version](https://poser.pugx.org/ttree/googleanalytics/version)](https://packagist.org/packages/ttree/googleanalytics)
 
-# Google Analytics TS Objects
+# Google Analytics TS Object
 
-This package contains TypoScript objects to integrate Google Analytics Tracking code in your Neos CMS project.
+This package contains a TypoScript object to integrate Google Analytics tracking code in your Neos CMS project.
 
-## How to integrate your tracking code ?
+## How to integrate your tracking code?
 
-By default the tracking code in include only in ```Production``` or ```Production/*``` context:
+Add this to your TypoScript to add the tracking snippet and set your code:
 
     prototype(TYPO3.Neos:Page)
         body.javascripts.analytics = Ttree.GoogleAnalytics:TrackingCode {
@@ -15,9 +15,9 @@ By default the tracking code in include only in ```Production``` or ```Productio
         }
     }
 
-If you need to tracking code check [TrackingCode](Resources/Private/TypoScript/TypoScriptObjects/TrackingCode.ts2), you
-can change the EEL expression at ```@if.includeTrackingCode```.
-
+**Note:** By default the tracking code is included only in ```Production``` context. If you need to include the tracking code
+also in ```Development``` context, check the code in [TrackingCode](Resources/Private/TypoScript/TypoScriptObjects/TrackingCode.ts2),
+you can adjust the Eel expression at ```@if.includeTrackingCode``` as you need.
 
 ## Acknowledgments
 
