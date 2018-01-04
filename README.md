@@ -16,7 +16,7 @@ Add this to your TypoScript to add the tracking snippet and set your code:
     }
 
 **Note:** By default the tracking code is included only in ```Production``` context. If you need to include the tracking code
-also in ```Development``` context, check the code in [TrackingCode](Resources/Private/TypoScript/TypoScriptObjects/TrackingCode.ts2),
+also in ```Development``` context, check the code in [TrackingCode](Resources/Private/Fusion/TrackingCode/TrackingCode.fusion),
 you can adjust the Eel expression at ```@if.includeTrackingCode``` as you need.
 
 ## Acknowledgments
